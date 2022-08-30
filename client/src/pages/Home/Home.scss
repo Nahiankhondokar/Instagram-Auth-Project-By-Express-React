@@ -1,0 +1,304 @@
+body {
+  background-color: red;
+}
+.home-container {
+  display: flex;
+  justify-content: center;
+
+  .home-wrapper {
+    width: 870px;
+    display: flex;
+    gap: 20px;
+
+    .time-line {
+      flex: 3;
+
+      .post-card {
+        display: flex;
+        background-color: white;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px 0px;
+        border-radius: 5px;
+        overflow: hidden;
+        border: 1px solid rgb(196, 195, 195);
+
+        .post-card-header {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 10px 0px;
+          width: 95%;
+          justify-content: space-between;
+
+          .post-user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            img {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+
+            .user-details {
+              display: flex;
+              flex-direction: column;
+
+              a {
+                text-decoration: none;
+                color: black;
+                font-size: 14px;
+                font-weight: 700;
+              }
+
+              .location {
+                font-size: 11px;
+                font-weight: 300;
+              }
+            }
+          }
+
+          .post-opt-btn {
+            button {
+              border: none;
+              background: transparent;
+              font-weight: bold;
+            }
+          }
+        }
+
+        .post-image {
+          width: 100%;
+
+          img {
+            width: auto;
+          }
+        }
+
+        .timeline-icons {
+          display: flex;
+          justify-content: space-between;
+          width: 95%;
+          align-items: center;
+
+          .icon-left {
+            display: flex;
+            gap: 15px;
+
+            a {
+              color: black;
+              font-size: 30px;
+            }
+          }
+
+          .icon-right {
+            display: flex;
+            gap: 10px;
+
+            a {
+              color: black;
+              font-size: 30px;
+            }
+          }
+        }
+
+        .post-details {
+          display: flex;
+          flex-direction: column;
+          width: 95%;
+          justify-content: center;
+          padding: 10px 0px;
+
+          .likes {
+            font-size: 14px;
+            font-weight: 500;
+          }
+
+          .post-content {
+            font-size: 16px;
+            padding: 5px 0px;
+
+            a {
+              font-weight: 500;
+              color: black;
+              text-decoration: none;
+            }
+          }
+
+          .post-comments {
+            color: gray;
+            font-size: 14px;
+            padding-bottom: 5px;
+            cursor: pointer;
+          }
+
+          .post-time {
+            color: rgb(189, 189, 189);
+            font-size: 12px;
+          }
+        }
+
+        .all-comments-area {
+          display: flex;
+          width: 95%;
+          height: 40px;
+          border-top: 1px solid #e9e9e9;
+          justify-content: space-between;
+          align-items: center;
+          gap: 10px;
+          padding: 25px 0;
+
+          a {
+            font-size: 18px;
+            color: gray;
+          }
+
+          input {
+            width: 100%;
+            padding: 0px 5px;
+            border: none;
+            font-size: 14px;
+            font-weight: 400;
+            color: rgb(189, 189, 189);
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          button {
+            border: none;
+            background-color: transparent;
+            font-size: 14px;
+            color: #79c4fd;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .user-info {
+      flex: 2;
+      display: flex;
+      width: 90%;
+      height: 50px;
+      margin: 20px 0px;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 10px;
+
+      .user-personal-info {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        justify-content: space-between;
+
+        .user-details {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          span {
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            font-weight: 300;
+
+            a {
+              color: black;
+              font-weight: 500;
+              font-size: 14px;
+              text-decoration: none;
+            }
+          }
+        }
+
+        .user-switch-btn {
+          a {
+            text-decoration: none;
+            color: #0095f6;
+            font-size: 13px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .insta-suggetion-area {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        .suggetion-tittle {
+          font-size: 15px;
+          color: #7a7a7a;
+          font-weight: 500;
+        }
+
+        a.see-all-btn {
+          border: none;
+          background-color: none;
+          color: black;
+          text-decoration: none;
+          font-size: 14px;
+        }
+      }
+
+      .insta-suggetion-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .suggetion-details {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          span.suggetion-item-tittle {
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            font-weight: 300;
+            font-size: 13px;
+            color: #7a7a7a;
+
+            a {
+              text-decoration: none;
+              color: black;
+              font-weight: bold;
+            }
+          }
+
+          .suggetion-logo {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: white;
+            padding: 5px;
+            border: 1px solid rgb(196, 195, 195);
+          }
+        }
+
+        .user-follow-btn a {
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 400;
+          color: #0095f6;
+        }
+      }
+    }
+  }
+}
